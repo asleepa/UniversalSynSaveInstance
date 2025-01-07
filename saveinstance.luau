@@ -58,7 +58,7 @@ do
 
 	local finder
 	finder, global_container = loadstring(
-		game:HttpGet("https://raw.githubusercontent.com/luau/SomeHub/main/" .. filename .. ".luau", true),
+		game:HttpGet("https://raw.githubusercontent.com/asleepa/SomeHub/main/" .. filename .. ".luau", true),
 		filename
 	)()
 
@@ -226,7 +226,7 @@ do -- * Load Region of Déjà Vu
 		local hashlib_sha384
 		pcall(function()
 			hashlib_sha384 = loadstring(
-				game:HttpGet("https://raw.githubusercontent.com/luau/SomeHub/main/" .. filename .. ".luau", true),
+				game:HttpGet("https://raw.githubusercontent.com/asleepa/SomeHub/main/" .. filename .. ".luau", true),
 				filename
 			)()(4544052033).sha384
 		end)
@@ -859,7 +859,7 @@ do
 	}
 
 	local NotScriptableFixes =
-		{ -- For more info: https://github.com/luau/UniversalSynSaveInstance/blob/master/Tests/Potentially%20Missing%20Properties%20Tracker.luau
+		{ -- For more info: https://github.com/asleepa/UniversalSynSaveInstance/blob/master/Tests/Potentially%20Missing%20Properties%20Tracker.luau
 			Instance = {
 				AttributesSerialize = function(instance)
 					-- * There are certain restrictions for names of attributes
@@ -1359,7 +1359,7 @@ local GLOBAL_ENV = getgenv and getgenv() or _G or shared
 	Saves instances with specified options. Example:
 	```lua
 	local Params = {
-		RepoURL = "https://raw.githubusercontent.com/luau/SynSaveInstance/main/",
+		RepoURL = "https://raw.githubusercontent.com/asleepa/SynSaveInstance/main/",
 		SSI = "saveinstance",
 	}
 
